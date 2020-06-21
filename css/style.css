@@ -303,7 +303,7 @@ h1,h2,h3,h4,h5,h6,p {
     position: relative;
     z-index: 3;
     width: 90%;
-    color: #fff;
+    fill: #fff;
 }
 .footer__title {
   padding-top: 232px;
@@ -327,7 +327,317 @@ h1,h2,h3,h4,h5,h6,p {
   display: block;
   width: 133px;
   fill: #fff;
-  padding: 0;
+  padding-bottom: 10px;
+}
+@media (min-width: 769px) and (max-width: 1279px) {
+    .header {
+       background: url("../img/football_1280.jpg") no-repeat top / cover;
+    }
+    .header__title {
+        font-size: 64px;
+        margin-left: 84px;
+    }
+    .header__title span {
+        margin-left: 195px;
+        margin-top: 0;
+    }
+    .dowload__app {
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding-bottom: 90px;
+    } 
+    .button {
+        width: 311px;
+        height: 79px;
+        border-radius: 41px;
+        margin-left: 30px;
+        box-shadow: 8px 14px 24px #0a0e34;
+    }
+    .button:first-child {
+        margin-left: 0;
+    }
+    .button__icon {
+        vertical-align: middle;
+        width: 41px;
+        height: 45px;
+        margin-left: 50px;
+        margin-top: 13px;   
+    }
+    .button__desc {
+        vertical-align: middle;
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 12px;
+    }
+    .athlets {
+        position: relative;
+    }
+    .section__title {
+        font-size: 80px;
+        line-height: 60px;
+    }
+    .section__img--athlets {
+        position: absolute;
+        top: 35px;
+        left: -12%;
+        width: 497px;
+        height: 699px;
+    }
+    .card__title {
+        font-size: 32px;
+    }
+    .card__number, .number__active {
+        font-size: 18px;
+    }
+    .card__number::after, .card__number--purple::after, 
+    .card__number--blue::after,
+    .number__active::after
+    {
+        width: 20px;
+    }
+    .card__desc {
+        font-size: 16px;
+    }
+    .section__title, .card__number, .card__desc {
+        padding-left: 0;
+        margin-left: 291px;
+    }
+    .players {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .section__img--players {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 690px;
+    height: 100%;
+    z-index: 2;
+  }
+  .card__number--players, .card__number--blue, .section__title--players, .card__desc--players,
+  .card__title--players {
+    margin-left: 32px;
+    max-width: 427px;
+    letter-spacing: 1.2px;
+}
+    .card__desc--blue {
+        padding: 27px 26px 50px 0;
+    }
+    .box {
+       width: 116px;
+       height: 116px;
+       bottom: -35px;
+    }
+    .section__title--active {
+        font-size: 80px;
+        padding-top: 90px;
+    }
+    .section__title--active, .card__desc--active {
+        margin-left: 32px;
+        padding-left: 0;
+ }
+    .footer__icon {
+       width:  130px;
+       height: 137px;
+ }
+     .footer__title {
+       padding-top: 345px;
+       padding-bottom: 287px;
+  }
+  .footer__logo {
+       width: 205px;
+       padding-bottom: 20px;
+  }
 }
 
-
+    @media (min-width: 1280px) {
+        .header {
+            background: url('../img/football_1920.jpg') no-repeat top / cover;
+        }
+        .logo {
+            padding-bottom: 265px;
+        }
+        .header__title {
+            font-size: 90px;
+            margin-left: 155px;
+            letter-spacing: 4.96px;
+        }
+        .header__title span {
+            margin-left: 449px;
+            margin-top: -20px;
+            margin-bottom: 200px;
+        }
+        .dowload__app {
+            flex-flow: row nowrap;
+            padding-bottom: 110px;
+            justify-content: center;
+        }
+        .button {
+            margin-left: 50px;
+            width: 311px;
+            height: 77px;
+            margin-bottom: 0;
+            border-radius: 39px;
+        }
+        .button:first-child {
+            margin-left: 0;
+        }
+        .button__icon {
+            vertical-align: bottom;
+            margin-top: 10px;
+            width: 40px;
+            height: 50px;
+            margin-left: 57px;
+        }
+        .button__icon--apple {
+            margin-left: 38px;
+            height: 48px;
+            width: 42px;
+        }
+        .button__desc {
+            vertical-align: bottom;
+            font-size: 14px;
+        }
+        .athlets {
+            position: relative;
+        } 
+        .section__img--athlets {
+            position: absolute;
+            top: 13px;
+            left: 6vw;
+            width: 566px;
+            height: 908px;
+        }
+        .section__title {
+            font-size: 80px;
+            padding-top: 90px;
+            margin-bottom: 70px;
+        }
+        .section__title, .card__number,
+        .card__desc {
+            margin-left: calc(50% + 58px);
+        }
+        .card__desc {
+            padding-left: 0;
+            margin-left: calc(50% + 58px);
+        }
+        .card__number, active__number {
+            font-size: 18px;
+        }
+        .card__number::after {
+            width: 20px;
+            height: 5px;
+        }
+        .card__title {
+            font-size: 36px;
+        }
+        .card__desc {
+            font-size: 20px;
+            max-width: 700px;
+            padding-top: 16px;
+            padding-left: 0;
+        }
+        .section__title--players, .card__number--players, 
+        .card__desc--players {
+            margin-left: 10%;
+        }
+        .card__desc--blue {
+            padding: 27px 28px 50px 0;
+        }
+        .players {
+            position: relative;
+            overflow: hidden;
+            margin-top: -30px;
+        }
+        .section__img--players {
+            position: absolute;
+            top: 10px;
+            left: 26%;
+            width: 991px;
+            height: 815px;
+        }
+        .active {
+            display: flex;
+            justify-content: space-between;
+        }
+        .active__box, .box__info {
+            flex-basis: 50%;
+        }
+        .section__title--active {
+            margin-left: 13.5%;
+            font-size: 80px;
+            padding-top: 240px;
+        }
+        .section__title--active--right {
+            font-size: 80px;
+            margin-left: 10%;
+            padding-top: 240px;
+        }
+        .box__info--right {
+            order: 0;
+        }
+        .active__box--right {
+            order: 1;
+        }
+        .card__desc--active {
+            font-size: 24px;
+            margin-left: 13.5%;
+            line-height: 1.3;
+        }
+        .card__desc--active--right {
+            font-size: 24px;
+            margin-left: 10%;
+            line-height: 1.3;
+        }
+        .active__img {
+            height: 730px;
+            object-position: left;
+        }
+        .active__img--right {
+            height: 730px;
+            object-position: right;
+        }
+        .box {
+            width: 168px;
+            height: 155px;
+            bottom: 38%;
+            left: 100%;
+            transform: translate(-50%, -50%);
+        }
+        .box--right {
+            left: 0; 
+        }
+        .number__active {
+            font-size: 24px;
+        }
+        .number__active::after {
+            width: 30px;
+            height: 5px;
+        }
+        .footer__icon {
+            top: 260px;
+            left: 33%;
+            width: 130px;
+            height: 137px;
+            border-radius: 30px;
+        }
+        .footer__title {
+           text-align: left;
+           padding-top: 250px;
+           margin-left: calc(50% + 160px);
+           font-size: 80px;
+           letter-spacing: 4.41px;
+           transform: translateX(-50%);
+           margin-bottom: 160px;  
+        }
+        .footer__title span {
+            font-size: 30px;
+            text-align: left;
+        }
+        .footer__logo {
+            width: 191px;
+            padding-bottom: 50px;
+        }
+        
+    }
