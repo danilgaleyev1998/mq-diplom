@@ -102,11 +102,9 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 /*section athlets*/
-.athlets {
-    display: flex;
-    flex-flow: column wrap;
-}
+
 .section__title {
+    max-width: 280px;
     padding-top: 25px;
     margin-left: 20px;
     margin-bottom: 20px;
@@ -300,6 +298,7 @@ h1,h2,h3,h4,h5,h6,p {
   transform: translateX(-50%);
 }
 .surface__icon {
+    display: block;
     position: relative;
     z-index: 3;
     width: 90%;
@@ -329,7 +328,7 @@ h1,h2,h3,h4,h5,h6,p {
   fill: #fff;
   padding-bottom: 10px;
 }
-@media (min-width: 769px) and (max-width: 1279px) {
+@media (min-width: 641px) and (max-width: 960px) {
     .header {
        background: url("../img/football_1280.jpg") no-repeat top / cover;
     }
@@ -373,6 +372,7 @@ h1,h2,h3,h4,h5,h6,p {
         position: relative;
     }
     .section__title {
+        max-width: 654px;
         font-size: 80px;
         line-height: 60px;
     }
@@ -433,10 +433,19 @@ h1,h2,h3,h4,h5,h6,p {
         font-size: 80px;
         padding-top: 90px;
     }
-    .section__title--active, .card__desc--active {
+    .section__title--active, 
+    .section__title--active--right,
+    .card__desc--active,
+    .card__desc--active--right {
         margin-left: 32px;
         padding-left: 0;
  }
+    .section__title--active--right {
+        padding-top: 91px;
+    }
+    .card__desc--active--right {
+        margin-left: 32px;  
+    }
     .footer__icon {
        width:  130px;
        height: 137px;
@@ -451,7 +460,7 @@ h1,h2,h3,h4,h5,h6,p {
   }
 }
 
-    @media (min-width: 1280px) {
+    @media (min-width: 961px) and (max-width: 1920px) {
         .header {
             background: url('../img/football_1920.jpg') no-repeat top / cover;
         }
@@ -510,6 +519,7 @@ h1,h2,h3,h4,h5,h6,p {
             height: 908px;
         }
         .section__title {
+            max-width: 650px;
             font-size: 80px;
             padding-top: 90px;
             margin-bottom: 70px;
@@ -625,11 +635,12 @@ h1,h2,h3,h4,h5,h6,p {
         .footer__title {
            text-align: left;
            padding-top: 250px;
-           margin-left: calc(50% + 160px);
+           margin-left: calc(50% + 200px);
            font-size: 80px;
            letter-spacing: 4.41px;
            transform: translateX(-50%);
-           margin-bottom: 160px;  
+           margin-bottom: 160px; 
+           width: 710px;
         }
         .footer__title span {
             font-size: 30px;
